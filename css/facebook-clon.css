@@ -932,14 +932,15 @@ a .hidden-bar {
     }
     .center .status {
         max-width: 100%;
+        overflow: hidden;
     }
     .main-body .center .images .image img {
-        width: 50px;
-        height: 100px;
+       max-width: 80px;
+        height: 200px;
     }
     .main-body .center .images .image::before {
-        width: 50px;
-        height: 100px;
+        width: 80px;
+        height: 200px;
     }
     .prof-img img {
         width: 20px;
@@ -954,7 +955,7 @@ a .hidden-bar {
     }
     .my-h4 h4::after {
         height: 40%;
-        width: 94%;
+        width: 99%;
         bottom: -17px;
 
     }
