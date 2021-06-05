@@ -412,7 +412,7 @@ header .prof-img .image {
     bottom: 0;
     left: 10px;
     flex-wrap: wrap;
-    width: 90%;
+    width: 92%;
     color: var(--text-color);
     z-index: 2;
     text-align: center;
@@ -935,11 +935,11 @@ a .hidden-bar {
         overflow: hidden;
     }
     .main-body .center .images .image img {
-       max-width: 80px;
+       max-width: 100px;
         height: 200px;
     }
     .main-body .center .images .image::before {
-        width: 80px;
+        width: 100px;
         height: 200px;
     }
     .prof-img img {
