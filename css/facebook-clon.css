@@ -553,6 +553,8 @@ header .prof-img .image {
     background-color: var(--post-back-ground-color);
     margin: 50px 0 0 10px;
     border-radius: 10px;
+    position: relative;
+    overflow: hidden;
 }
 
 .read-post .first-part {
@@ -613,7 +615,10 @@ header .prof-img .image {
     color: var(--text-color);
     margin-right: 10px;
 }
-
+.read-post .first-part .three-point i:hover + .settings {
+    bottom: 0px;
+    margin-bottom: 30px;
+}
 .read-post p {
     margin: 20px 10px;
     color: var(--text-color);
@@ -631,7 +636,6 @@ header .prof-img .image {
     border-bottom: 1px solid var(--input-color);
     text-align: center;
 }
-
 
 .read-post .react .icons {
     font-size: 25px;
@@ -736,8 +740,41 @@ header .prof-img .image {
     background-color: var(--input-color);
     color: var(--text-color);
     padding-left: 10px;
+    overflow: hidden;
 }
 
+.read-post .settings {
+    position: absolute;
+    background-color: var(--post-back-ground-color);
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    bottom: -895px;
+    left: 0;
+    z-index: 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    transition: 0.3s;
+    color: var(--text-color);
+}
+.read-post .settings .setting {
+display: flex;
+}
+.setting.have-border{
+    position: relative;
+    width: 100%;
+}
+.setting.have-border::after{
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid var(--input-color);
+    bottom: -20px;
+    width: 100%;
+
+}
 /* Start Right Side */
 
 .right-side {
@@ -830,11 +867,13 @@ header .prof-img .image {
 }
 
 /* End Right Side */
-header{
+
+header {
     position: sticky;
     top: 0;
     z-index: 6;
 }
+
 /* End body */
 
 /* Start Media */
@@ -842,9 +881,11 @@ header{
 a .hidden-search {
     display: none;
 }
+
 a .hidden-bar {
     display: none;
 }
+
 @media (max-width:1200px) {
     .main-body .right-side {
         display: none;
@@ -861,17 +902,17 @@ a .hidden-bar {
     .hidden-bar {
         margin-right: 10px;
     }
-    a .hidden-search{
+    a .hidden-search {
         display: block;
     }
-    a .hidden-bar{
+    a .hidden-bar {
         display: block;
     }
     header .icons-right .icon {
         font-size: 15px;
     }
-    header .icons-right a i{
-        font-size:30px;
+    header .icons-right a i {
+        font-size: 30px;
     }
     header .icons-right .icon::before {
         width: 0px;
@@ -881,12 +922,12 @@ a .hidden-bar {
     header .logo-and-search {
         display: none;
     }
-    .icons-center i.active::after{
+    .icons-center i.active::after {
         bottom: -10px;
     }
 }
-@media (max-width:992px) {
 
+@media (max-width:992px) {
     header .icons-center {
         flex-basis: 99%;
     }
@@ -898,8 +939,8 @@ a .hidden-bar {
         margin: 0;
         padding: 0;
     }
-    
 }
+
 @media (max-width:768px) {
     header {
         margin: 0;
@@ -913,8 +954,8 @@ a .hidden-bar {
     header .icons-right .icon {
         font-size: 10px;
     }
-    header .icons-right a i{
-        font-size:20px;
+    header .icons-right a i {
+        font-size: 20px;
     }
     header .icons-right .icon:not(:nth-child(2)) {
         display: none;
@@ -935,7 +976,7 @@ a .hidden-bar {
         overflow: hidden;
     }
     .main-body .center .images .image img {
-       max-width: 100px;
+        max-width: 100px;
         height: 200px;
     }
     .main-body .center .images .image::before {
@@ -943,8 +984,8 @@ a .hidden-bar {
         height: 200px;
     }
     .prof-img img {
-        width: 20px;
-        height: 20px;
+        width: 40px;
+        height: 40px;
     }
     .center .status .images h4 {
         font-size: 12px;
@@ -957,7 +998,6 @@ a .hidden-bar {
         height: 40%;
         width: 99%;
         bottom: -17px;
-
     }
     .my-h4 h4::before {
         font-size: 20px;
@@ -966,7 +1006,7 @@ a .hidden-bar {
         transform: translateX(-50%);
     }
     .center .status::after {
-      display: none;
+        display: none;
     }
     .main-body {
         margin: 15px 15px 15px 6px;
@@ -985,20 +1025,19 @@ a .hidden-bar {
         align-items: flex-start;
         margin: 0 13px;
     }
-   
     .hidden-bar {
         margin-right: 10px;
     }
-    a .hidden-search{
+    a .hidden-search {
         display: block;
     }
-    a .hidden-bar{
+    a .hidden-bar {
         display: block;
     }
-    .main-body .center .write-post .secund-part{
+    .main-body .center .write-post .secund-part {
         font-size: 12px;
     }
-    .main-body .center .write-post{
+    .main-body .center .write-post {
         margin-top: 20px;
     }
     .read-post {
@@ -1008,10 +1047,17 @@ a .hidden-bar {
     .main-body .center .write-post .first-part input {
         height: 45px;
     }
- .read-post p {
-     font-size: 16px;
- }
- 
+    .read-post p {
+        font-size: 16px;
+    }
 }
 
 /* ُEnd Media */
+
+.i-name label {
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+}

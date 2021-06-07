@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facebook-clon</title>
+    <title>Facebook-clone</title>
     <!-- Main Template css File -->
     <link rel="stylesheet" href="css/facebook-clon.css">
     <!-- Render All Element Normally -->
@@ -39,7 +39,7 @@
             <a href=""> <i class="fas fa-tv fa-2x "></i> <span class="notifications" data-progress="8"></span> </a>
             <a href=""> <i class="fas fa-house-user fa-2x"></i></a>
             <a href=""> <i class="fas fa-users fa-2x"></i></a>
-            <a href=""><i class="far fa-flag fa-2x"></i> <span class="notifications" data-progress="10"></span> </a>
+            <a href=""><i class="far fa-bell fa-2x"></i> <span class="notifications" data-progress="10"></span> </a>
 
 
         </div>
@@ -220,6 +220,49 @@
                     </div>
                     <div class="three-point">
                         <i class="fas fa-ellipsis-h"></i>
+                        <div class="settings">
+                            <div class="setting">
+                                <i class="far fa-bookmark"></i>
+                                <label for="">Save post</label>
+                            </div>
+                            <div class="setting">
+                                <i class="far fa-minus-square"></i>
+                                <label for="">Hide post</label>
+                            </div>
+                            <div class="setting">
+                                <i class="far fa-clock"></i>
+                                <label for="">Snoze <span>Name</span> for 30</label>
+                            </div>
+                            <div class="setting">
+                                <i class="far fa-minus-square"></i>
+                                <label for="">Hide all from <span>Name</span></label>
+                            </div>
+                            <div class="setting have-border">
+                                <i class="fas fa-arrow-down"></i>
+                                <label for="">See more</label>
+                            </div>
+                            <div class="setting">
+                                <i class="fas fa-question-circle"></i>
+                                <label for="">Why am i seeing this
+                                    post</label>
+                            </div>
+                            <div class="setting">
+                                <i class="fas fa-exclamation-circle"></i>
+                                <label for="">Find support or report post</label>
+                            </div>
+                            <div class="setting">
+                                <i class="fas fa-shield-alt"></i>
+                                <label for="">Report to group admins</label>
+                            </div>
+                            <div class="setting">
+                                <i class="far fa-bell"></i>
+                                <label for="">Turn on notifications for this page</label>
+                            </div>
+                            <div class="setting">
+                                <i class="far fa-copy"></i> 
+                                <label for="">Copy link</label>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <p>Time is the valuabal thing , don't waste it</p>
@@ -240,30 +283,29 @@
                 <div class="like-comment-share">
                     <div class="i-name">
                         <i class="far fa-thumbs-up"></i>
-                        <p>
+                        <label for="">
                             Like
-                        </p>
+                        </label>
                     </div>
                     <div class="i-name">
                         <i class="far fa-comment-alt"></i>
-                        <p>
+                        <label for="comment">
                             Comment
-                        </p>
+                        </label>
                     </div>
                     <div class="i-name">
                         <i class="fas fa-share"></i>
-                        <p>
+                       <label for="">
                             Share
-                        </p>
+                        </label>
                     </div>
                 </div>
                 <div class="box">
                     <div class="prof">
                         <img src="images/bassel.jpg" alt="">
                     </div>
-                    <input type="text" placeholder="Write a comment">
+                    <input id="comment" type="text" placeholder="Write a comment">
                     <div class="icons">
-
                     </div>
                 </div>
             </div>
